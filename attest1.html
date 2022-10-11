@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta chrset="UTF 8">
+    <title>authentication</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="https://code.angularjs.org/1.6.9/angular.js"></script>
+<script src="/lib/jcs-auto-validate.min.js"></script>
+
+<body bgcolor="#EBCDC6">
+<h1>Authentication</h1>
+
+<div ng-app="DemoApp">
+    <div class="form-group">
+        <form name="myForm" novalidate>
+            <p>USER:<br></p>
+                <div class="form-group">
+            <input class="form-control" type="text" id="user" ng-model="user" required="required"/>
+
+             <p>PASSWORD:<br></p>
+                <div class="form-group">
+            <input class="form-control" type="password" id="user" ng-model="user" required="required"/>
+			
+        </div>
+            <div>
+			<p>
+			
+			
+			</p>
+                <div class="form-group">
+                    <input type="submit">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<script>
+    var app=angular.module('DemoApp',['jcs-autoValidate']);
+</script>
+</body>
+
+</html>
